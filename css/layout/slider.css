@@ -1,19 +1,19 @@
-  .slides-container {
-    display: grid;
-    margin: 7.5rem auto;
-    align-items: center;
-    justify-content: center;
-    width: 80vw;
-  }
-  
-  .slide{
+.slides-container {
+  display: grid;
+  margin: 7.5rem auto;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+}
+
+.slide{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 80vw;
     box-shadow: var(--bs-main);
     margin-bottom: 2rem;
    }
-
+   
    .slide-data-column{
      display: flex;
      align-items: center;
@@ -28,6 +28,8 @@
    .slide-img{
     width: 100%;
    }
+
+   img{vertical-align: middle;}
    
    /* Next & previous buttons */
    .prev, .next {
