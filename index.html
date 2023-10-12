@@ -74,7 +74,6 @@
                     <p class="ft-dish-price">$7.99</p>
                     <a class="btn order" href="">Order</a>
                 </section>
-
                 <section class="ft-dish-card">
                     <img src="./imgs/spätzle.jpg" alt="" class="ft-dish-card-img">
                     <div class="ft-dish-data-container">
@@ -87,7 +86,6 @@
                     <p class="ft-dish-price">$6.80</p>
                     <a class="btn order" href="">Order</a>
                 </section>
-
                 <section class="ft-dish-card">
                     <img src="./imgs/käsekuchen.jpg" alt="" class="ft-dish-card-img">
                     <div class="ft-dish-data-container">
@@ -100,7 +98,6 @@
                     <p class="ft-dish-price">$7.99</p>
                     <a class="btn order" href="">Order</a>
                 </section>
-
                 <section class="ft-dish-card">
                     <img src="./imgs/kartoffelpuffer.jpg" alt="" class="ft-dish-card-img">
                     <div class="ft-dish-data-container">
@@ -117,7 +114,7 @@
             <a href="#" class="btn view-all">view all</a>
         </div>
 
-        <div class="slides-container">
+        <div id="slides-container">
             <div class="home-titles-container">
                 <h3 class="home-title1">we have the better</h3>
                 <h2 class="home-title2">german beer</h2>
@@ -142,7 +139,8 @@
                     <div class="slide-data-container">
                         <h2 class="slide-title ft-dish-title">bitburger premium pils</h2>
                         <p class="ft-dish-type slide-amount">330ml</p>
-                        <p class="ft-dish-type slide-description">The straw-coloured pilsner is crystal-clear and perfectly hopped, 
+                        <p class="ft-dish-type slide-description">The straw-coloured pilsner is crystal-clear and
+                            perfectly hopped,
                             boasting a light taste and a lasting foam head with extra-fine bubbles.</p>
                         <p class="ft-dish-price slide-price">$2.25</p>
                         <a class="btn order" href="">Order</a>
@@ -157,7 +155,8 @@
                     <div class="slide-data-container">
                         <h2 class="slide-title ft-dish-title">schneider weisse</h2>
                         <p class="ft-dish-type slide-amount">500ml</p>
-                        <p class="ft-dish-type slide-description">Schneider Weisse Love Beer is a wheat beer with a lovely golden color topped with a 
+                        <p class="ft-dish-type slide-description">Schneider Weisse Love Beer is a wheat beer with a
+                            lovely golden color topped with a
                             dense and bright white foam.</p>
                         <p class="ft-dish-price slide-price">$3.90</p>
                         <a class="btn order" href="">Order</a>
@@ -172,7 +171,8 @@
                     <div class="slide-data-container">
                         <h2 class="slide-title ft-dish-title">Weihenstephaner</h2>
                         <p class="ft-dish-type slide-amount">330ml</p>
-                        <p class="ft-dish-type slide-description">A full-bodied golden yellow wheat beer with aromas of cloves.</p>
+                        <p class="ft-dish-type slide-description">A full-bodied golden yellow wheat beer with aromas of
+                            cloves.</p>
                         <p class="ft-dish-price slide-price">$2.50</p>
                         <a class="btn order" href="">Order</a>
                     </div>
@@ -188,11 +188,6 @@
                 <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
-
-
-
-
-
 
     </main>
 
@@ -223,6 +218,37 @@
             slides[slideIndex - 1].style.display = "grid";
             dots[slideIndex - 1].className += " active";
         }
+
+        // Agregar la función para avanzar automáticamente los slides cada 3 segundos (ajusta este valor según tus necesidades)
+        let autoSlideInterval = setInterval(function () {
+            plusSlides(1);
+        }, 4000); // Cambiar de slide cada 4 segundos
+
+        // Agregar manejo de eventos para detener/reiniciar el temporizador al interactuar con los puntos
+        let dots = document.getElementsByClassName("dot");
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].addEventListener("mouseover", function () {
+                clearInterval(autoSlideInterval); // Detener el temporizador al pasar el mouse por encima
+            });
+            dots[i].addEventListener("mouseout", function () {
+                autoSlideInterval = setInterval(function () {
+                    plusSlides(1);
+                }, 4000); // Reiniciar el temporizador cuando se libera el puntero
+            });
+        }
+
+        // Agregar manejo de eventos para detener el temporizador cuando el mouse entra en el contenedor
+        let sliderContainer = document.getElementById("slides-container");
+        sliderContainer.addEventListener("mouseover", function () {
+            clearInterval(autoSlideInterval);
+        });
+
+        // Agregar manejo de eventos para reiniciar el temporizador cuando el mouse sale del contenedor
+        sliderContainer.addEventListener("mouseout", function () {
+            autoSlideInterval = setInterval(function () {
+                plusSlides(1);
+            }, 4000); // Reiniciar el temporizador cuando se sale del contenedor
+        });
     </script>
 </body>
 
