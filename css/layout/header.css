@@ -1,0 +1,37 @@
+.hero-background{
+    background: url(../../imgs/hero-background.webp);
+    background-position: center;
+    background-size: cover;
+    height: min(42.5rem, 50rem, 55rem);
+    width: 100%;
+}
+
+.hero-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+
+.hero-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-texts-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-buttons-container{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.hero-image-container{
+    display: flex;
+    justify-content: center;
+}

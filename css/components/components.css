@@ -1,0 +1,67 @@
+.btn{
+    /*border & color styles*/
+    border-style: solid;
+    border-width: .0625rem;
+    border-color: var(--clr-white);
+    padding: .5rem 1rem;
+    color: var(--clr-white);
+    
+    /*font styles*/
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-md);
+    font-size: var(--fs-esm);
+    text-transform: uppercase;
+    text-decoration: none;
+
+    /*transitions*/
+    transition: 0.5s ease-out;
+}
+
+.read-more{
+    border-color: var(--clr-white);
+    color: var(--clr-white);
+}
+
+.read-more:hover{
+    background: var(--clr-white);
+    color: var(--clr-main);
+}
+
+.view-menu{
+    background: var(--clr-main);
+    color: var(--clr-white);
+    border: none;
+}
+
+.view-menu:hover{
+    background: var(--clr-white);
+    color: var(--clr-main);
+}
+
+.order{
+    border-color: var(--clr-main);
+    color: var(--clr-main);
+    padding: .5rem 2rem;
+}
+
+.order:hover{
+    background: var(--clr-main);
+    color: var(--clr-white);
+}
+
+.view-all{
+    border-color: var(--clr-main);
+    color: var(--clr-main);
+    margin: 2.5rem auto;
+    margin-bottom: 0;
+}
+
+.view-all:hover{
+    background: var(--clr-main);
+    color: var(--clr-white);
+}
+
+
+
+
+

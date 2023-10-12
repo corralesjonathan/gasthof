@@ -1,0 +1,89 @@
+.hero-title1{
+    font-family: var(--ff-main);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-rg);
+    color: var(--clr-white);
+    margin: 0;
+    text-align: left;
+}
+
+.hero-title2{
+    font-family: var(--ff-main);
+    font-size: var(--fs-xxl);
+    font-weight: var(--fw-bk);
+    color: var(--clr-white);
+    margin: 0;
+    text-align: left; 
+}
+
+.home-title1{
+    font-family: var(--ff-main);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-rg);
+    color: var(--clr-gray);
+    margin: 0;
+    text-align: left; 
+}
+
+.home-title2{
+    font-family: var(--ff-main);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bk);
+    color: var(--clr-main);
+    margin: 0;
+    text-align: left; 
+}
+
+.ft-dish-title{
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-nm);
+    font-weight: var(--fw-sb);
+
+    color: var(--clr-main);
+}
+
+.ft-dish-type{
+    margin: 0;
+    text-align: left;
+    text-transform:capitalize;
+
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-esm);
+    font-weight: var(--fw-rg);
+
+    color: var(--clr-gray);
+}
+
+.ft-dish-price{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-md);
+    color: var(--clr-gray);
+}
+
+.slide-title{
+    font-size: var(--fs-md);
+    margin-bottom: 2rem;
+}
+
+.slide-amount{
+    margin: .5rem auto;
+}
+
+.slide-description{
+    font-size: var(--fs-sm);
+    margin: .5rem auto;
+}
+
+.slide-price{
+    margin-bottom: 2rem;
+    font-size: var(--fs-nm);
+}
+
+
+
+

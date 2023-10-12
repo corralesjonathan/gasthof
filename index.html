@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Gasthof</title>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/bebas-neue" rel="stylesheet">
+    <!--fonts-->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <header class="hero-background">
+        <div class="top-nav-container">
+            <nav class="top-nav">
+                <div class="website-logo-container">
+                    <a href="#"><img src="./imgs/gasthof-logo.webp" alt="Gasthof logo" class="website-logo"></a>
+                </div>
+                <div class="nav-container">
+                    <ul class="nav-list">
+                        <li><a class="nav-list-link" href="#">Home</a></li>
+                        <li><a class="nav-list-link" href="#">Menu</a></li>
+                        <li><a class="nav-list-link" href="#">Contact</a></li>
+                        <li><a class="nav-list-link" href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="icons_container">
+                    <a href="#"><img src="./imgs/icons/search-form.svg"></a>
+                    <a href="#"><img src="./imgs/icons/user.svg"></a>
+                    <a href="#"><img src="./imgs/icons/bag.svg"></a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-title-container">
+                <div class="hero-texts-container">
+                    <h3 class="hero-title1">your passport to</h3>
+                    <h1 class="hero-title2">german dining</h1>
+                    <div class="hero-buttons-container">
+                        <a href="#" class="btn read-more">read more</a>
+                        <a href="#" class="btn view-menu">view menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="./imgs/hero-dish01.png" alt="Hero dish">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="ft-dishes-main-container">
+            <div class="home-titles-container">
+                <h3 class="home-title1">discover our</h3>
+                <h2 class="home-title2">featured dishes</h2>
+            </div>
+            <div class="ft-dishes-container">
+                <section class="ft-dish-card">
+                    <img src="./imgs/schnitzel.jpg" alt="" class="ft-dish-card-img">
+                    <div class="ft-dish-data-container">
+                        <div>
+                            <h2 class="ft-dish-title">Schnitzel</h2>
+                            <p class="ft-dish-type">Main course</p>
+                        </div>
+                        <a href="#"><img src="./imgs/icons/like.svg"></a>
+                    </div>
+                    <p class="ft-dish-price">$7.99</p>
+                    <a class="btn order" href="">Order</a>
+                </section>
+
+                <section class="ft-dish-card">
+                    <img src="./imgs/spätzle.jpg" alt="" class="ft-dish-card-img">
+                    <div class="ft-dish-data-container">
+                        <div>
+                            <h2 class="ft-dish-title">Spätzle</h2>
+                            <p class="ft-dish-type">Main course</p>
+                        </div>
+                        <a href="#"><img src="./imgs/icons/like.svg"></a>
+                    </div>
+                    <p class="ft-dish-price">$6.80</p>
+                    <a class="btn order" href="">Order</a>
+                </section>
+
+                <section class="ft-dish-card">
+                    <img src="./imgs/käsekuchen.jpg" alt="" class="ft-dish-card-img">
+                    <div class="ft-dish-data-container">
+                        <div>
+                            <h2 class="ft-dish-title">Käsekuchen</h2>
+                            <p class="ft-dish-type">Dessert</p>
+                        </div>
+                        <a href="#"><img src="./imgs/icons/like.svg"></a>
+                    </div>
+                    <p class="ft-dish-price">$7.99</p>
+                    <a class="btn order" href="">Order</a>
+                </section>
+
+                <section class="ft-dish-card">
+                    <img src="./imgs/kartoffelpuffer.jpg" alt="" class="ft-dish-card-img">
+                    <div class="ft-dish-data-container">
+                        <div>
+                            <h2 class="ft-dish-title">Kartoffelpuffer </h2>
+                            <p class="ft-dish-type">Starter</p>
+                        </div>
+                        <a href="#"><img src="./imgs/icons/like.svg"></a>
+                    </div>
+                    <p class="ft-dish-price">$7.99</p>
+                    <a class="btn order" href="">Order</a>
+                </section>
+            </div>
+            <a href="#" class="btn view-all">view all</a>
+        </div>
+
+        <div class="slides-container">
+            <div class="home-titles-container">
+                <h3 class="home-title1">we have the better</h3>
+                <h2 class="home-title2">german beer</h2>
+            </div>
+            <section class="slide fade">
+                <div class="slide-colum1"> <!--left-column-->
+                    <div class="slide-data-container">
+                        <h2 class="slide-title ft-dish-title">Köstritzer Schwarzbier</h2>
+                        <p class="ft-dish-type slide-amount">330ml</p>
+                        <p class="ft-dish-type slide-description">A Schwarzbier is a dark lager with roasted malt and
+                            sometimes a slightly memorable smoky flavour.</p>
+                        <p class="ft-dish-price slide-price">$2.35</p>
+                        <a class="btn order" href="">Order</a>
+                        <div class="slider-arrows-container">
+                            <a class="prev" onclick="plusSlides(-1)"> <img src="./imgs/icons/left-arrow.svg" alt=""></a>
+                            <a class="next" onclick="plusSlides(1)"><img src="./imgs/icons/right-arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div> <!--left-column-->
+                <div><!--right column-->
+                    <img src="./imgs/beer1.svg" alt="" style="width:100%">
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "grid";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>

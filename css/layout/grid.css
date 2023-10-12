@@ -1,0 +1,46 @@
+.ft-dishes-main-container{
+   display: grid;
+   margin: 7.5rem auto;
+   align-items: center;
+   justify-content: center;
+}
+
+.home-titles-container{
+    margin-bottom: 5rem;
+}
+
+.ft-dishes-container{
+    width: 80vw;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.ft-dish-card{
+    padding-bottom: 2rem;
+    background: var(--clr-white);
+    text-align: center;
+    box-shadow: var(--bs-main);
+    overflow: hidden;
+}
+
+.ft-dish-card:hover{
+    opacity: 1;
+}
+
+.ft-dish-card-img{
+    position: relative;
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.ft-dish-data-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.ft-dish-card:hover .ft-dish-card-img{
+    transform: scale(1.1);
+}
