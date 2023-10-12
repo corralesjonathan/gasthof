@@ -114,7 +114,7 @@
             <a href="#" class="btn view-all">view all</a>
         </div>
 
-        <div id="slides-container">
+        <div id="slider-container">
             <div class="home-titles-container">
                 <h3 class="home-title1">we have the better</h3>
                 <h2 class="home-title2">german beer</h2>
@@ -238,7 +238,7 @@
         }
 
         // Agregar manejo de eventos para detener el temporizador cuando el mouse entra en el contenedor
-        let sliderContainer = document.getElementById("slides-container");
+        let sliderContainer = document.getElementById("slider-container");
         sliderContainer.addEventListener("mouseover", function () {
             clearInterval(autoSlideInterval);
         });
@@ -248,6 +248,25 @@
             autoSlideInterval = setInterval(function () {
                 plusSlides(1);
             }, 4000); // Reiniciar el temporizador cuando se sale del contenedor
+        });
+
+        // Agregar manejo de eventos para cambiar las diapositivas deslizando horizontalmente en dispositivos móviles
+        let touchStartX = null;
+        let touchEndX = null;
+
+        document.getElementById("slider-container").addEventListener("touchstart", function (e) {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        document.getElementById("slider-container").addEventListener("touchend", function (e) {
+            touchEndX = e.changedTouches[0].clientX;
+
+            // Determinar la dirección del deslizamiento
+            if (touchStartX - touchEndX > 50) {
+                plusSlides(1); // Deslizar hacia la izquierda para avanzar
+            } else if (touchEndX - touchStartX > 50) {
+                plusSlides(-1); // Deslizar hacia la derecha para retroceder
+            }
         });
     </script>
 </body>
