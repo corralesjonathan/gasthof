@@ -27,4 +27,10 @@
     --clr-black: hsla(0, 0%, 0%, 1);
     /* box-shadows */
     --bs-main: hsla(210, 8%, 62%, 0.2) 0px 8px 24px;
+    /*margins*/
+    --mg-xl: 10rem; /* 160px*/
+    --mg-lg: 7.5rem; /* 120px*/
+    --mg-md: 5rem; /* 80px*/
+    --mg-nm: 2.5rem; /* 40px*/
+    --mg-sm: 1.25rem; /*20px*/
 }

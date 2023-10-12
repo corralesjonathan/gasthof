@@ -1,12 +1,12 @@
 .ft-dishes-main-container{
    display: grid;
-   margin: 7.5rem auto;
+   margin: var(--mg-lg) auto;
    align-items: center;
    justify-content: center;
 }
 
 .home-titles-container{
-    margin-bottom: 5rem;
+    margin-bottom: var(--mg-md);
 }
 
 .ft-dishes-container{

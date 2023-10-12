@@ -1,6 +1,6 @@
 #slider-container {
   display: grid;
-  margin: 7.5rem auto;
+  margin: var(--mg-lg) auto;
   align-items: center;
   justify-content: center;
   width: 80vw;
