@@ -27,10 +27,18 @@
 .hero-buttons-container{
     display: flex;
     gap: 1rem;
-
+    margin-top: var(--mg-sm);
 }
 
 .hero-image-container{
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 768px){
+   
+    .hero-buttons-container{
+        display: grid;
+    }
+    
+    }

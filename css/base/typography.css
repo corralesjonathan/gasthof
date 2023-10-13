@@ -1,6 +1,6 @@
 .hero-title1{
     font-family: var(--ff-main);
-    font-size: var(--fs-lg);
+    font-size: clamp(var(--fs-md), var(--fs-lg), var(--fs-xl));
     font-weight: var(--fw-rg);
     color: var(--clr-white);
     margin: 0;
@@ -9,8 +9,9 @@
 
 .hero-title2{
     font-family: var(--ff-main);
-    font-size: var(--fs-xxl);
+    font-size: clamp(var(--fs-xl), 4rem, var(--fs-xxl));
     font-weight: var(--fw-bk);
+    line-height: 5rem;
     color: var(--clr-white);
     margin: 0;
     text-align: left; 

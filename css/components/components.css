@@ -62,6 +62,20 @@
     color: var(--clr-white);
 }
 
+@media (max-width: 768px){
+   
+    .read-more{
+        display: block;
+        width: 30%;
+    }
+
+    .view-menu{
+        display: block;
+        width: 30%;
+    }
+    
+    }
+
 
 
 
