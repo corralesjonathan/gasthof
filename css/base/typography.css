@@ -4,17 +4,15 @@
     font-weight: var(--fw-rg);
     color: var(--clr-white);
     margin: 0;
-    text-align: left;
 }
 
 .hero-title2{
     font-family: var(--ff-main);
-    font-size: clamp(var(--fs-xl), 4rem, var(--fs-xxl));
+    font-size: clamp(var(--fs-xl), var(--fs-xxl), var(--fs-xxl));
     font-weight: var(--fw-bk);
     line-height: 5rem;
     color: var(--clr-white);
     margin: 0;
-    text-align: left; 
 }
 
 .home-title1{

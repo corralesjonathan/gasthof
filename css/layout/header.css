@@ -1,14 +1,14 @@
 .hero-background{
-    background: url(../../imgs/hero-background.jpg);
+    background: url(../../imgs/hero-background.webp);
     background-position: center;
     background-size: cover;
-    height: min(42.5rem, 50rem, 55rem);
+    height: auto;
     width: 100%;
 }
 
 .hero-container{
     display: grid;
-    height: min(42.5rem, 50rem, 55rem);
+    height: min(42.5rem, 37rem, 55rem);
     align-items: center;
     justify-content: center;
    
@@ -16,18 +16,23 @@
 
 .hero-title-container{
     display: grid;
+    align-items: center;
     width: 80vw;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: var(--mg-nm);
 }
 
 .hero-texts-container{
     display: flex;
     flex-direction: column;
+    text-align: right;
 }
 
 .hero-buttons-container{
     display: flex;
     gap: 1rem;
     margin-top: var(--mg-sm);
+    justify-content: flex-end;
 }
 
 .hero-image-container{
@@ -35,10 +40,24 @@
     justify-content: center;
 }
 
+.hero-img{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
 @media (max-width: 768px){
    
     .hero-buttons-container{
-        display: grid;
+        justify-content: center;
+    }
+
+    .hero-title-container{
+        grid-template-columns: 1fr;
+    }
+
+    .hero-texts-container{
+        text-align: center;
     }
     
     }
