@@ -92,24 +92,25 @@
     
     
     .icons_container{
-        gap: .75rem;
         order: 3;
-        justify-content: start;
+        justify-content: end;
     }
     
     .search-icon img {
-      width: 1.125rem;
-      height: 1.125rem;
+      width: 1.5rem;
+      height: 1.5rem;
     }
 
     .user-icon img {
-        width: 1.125rem;
-        height: 1.125rem;
+        /*width: 1.125rem;
+        height: 1.125rem;*/
+        display: none;
     }
 
     .bag-icon img {
-        width: 1.125rem;
-        height: 1.125rem;
+         /*width: 1.125rem;
+        height: 1.125rem;*/
+        display: none;
     }
 
     #nav-container{
