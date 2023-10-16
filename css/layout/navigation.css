@@ -86,33 +86,13 @@
 
 @media (max-width: 767px) {
     .website-logo-container{
-        order: 2;
+        order: 1;
     }
 
-    
-    
     .icons_container{
-        order: 3;
-        justify-content: end;
+        display: none;
     }
     
-    .search-icon img {
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-
-    .user-icon img {
-        /*width: 1.125rem;
-        height: 1.125rem;*/
-        display: none;
-    }
-
-    .bag-icon img {
-         /*width: 1.125rem;
-        height: 1.125rem;*/
-        display: none;
-    }
-
     #nav-container{
         opacity: 0;
         visibility: hidden;
@@ -126,17 +106,19 @@
         position: absolute;
         width: auto;
         top: 0;
-        right: 0;
+        right: -100px;
         background-color: var(--clr-white);
         padding: 1rem;
         bottom: 0;
         z-index: 1;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        transition: .5s;
     }
 
     #nav-container.visible{
         opacity: 1;
         visibility: visible;
+        right: 0;
     }
 
     .nav-list{
@@ -146,7 +128,7 @@
 
     #mobile-open-btn{
         display: block;
-        order: 1;
+        order: 2;
     }
 
     #mobile-close-btn{

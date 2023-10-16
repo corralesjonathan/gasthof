@@ -25,9 +25,8 @@ function showHeroSlides(n) {
     dots[heroSlideIndex - 1].className += " active";
 }
 
-// Agregar la función para avanzar automáticamente los slides cada 3 segundos (ajusta este valor según tus necesidades)
 let autoHeroSlideInterval = setInterval(function () {
     plusHeroSlides(1);
-}, 6000); // Cambiar de slide cada 4 segundos
+}, 6000); // Cambiar de slide cada 6 segundos
     
 
