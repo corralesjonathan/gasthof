@@ -106,7 +106,7 @@
         position: absolute;
         width: auto;
         top: 0;
-        right: -100px;
+        right: 0;
         background-color: var(--clr-white);
         padding: 1rem;
         bottom: 0;
@@ -118,7 +118,6 @@
     #nav-container.visible{
         opacity: 1;
         visibility: visible;
-        right: 0;
     }
 
     .nav-list{
