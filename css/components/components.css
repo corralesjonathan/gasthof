@@ -62,9 +62,19 @@
     color: var(--clr-white);
 }
 
-@media (max-width: 768px){
-    
-    }
+.read-more2{
+    border-color: var(--clr-main);
+    color: var(--clr-main);  
+    margin-top: var(--mg-sm);
+    display: inline-block;
+}
+
+.read-more2:hover{
+    border-color: var(--clr-main);
+    background: var(--clr-main);
+    color: var(--clr-white);   
+}
+
 
 
 
