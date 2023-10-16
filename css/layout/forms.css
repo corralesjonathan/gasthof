@@ -39,7 +39,7 @@
 @media (max-width: 768px){
    
    .subscribe-form{
-    width: 100%;
+    width: auto;
    }
     
     }

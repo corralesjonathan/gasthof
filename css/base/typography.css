@@ -105,6 +105,27 @@
     color: var(--clr-gray);
 }
 
+.footer-titles{
+    color: var(--clr-white);
+}
+
+.nav-footer-link{
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-rg);
+    font-size: var(--fs-nm);
+
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.footer-legal{
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-lg);
+    font-size: var(--fs-sm);
+    color: var(--clr-white);
+    text-align: center;
+}
+
 
 
 

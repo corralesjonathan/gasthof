@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 80vw;
+    height: 700px;
     box-shadow: var(--bs-main);
     margin-bottom: 2rem;
    }
