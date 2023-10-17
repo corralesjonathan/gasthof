@@ -114,7 +114,11 @@
     .nav-list{
         flex-direction: column;
         align-items: end;
-        gap: 1.5rem;
+        gap: 1rem;
+    }
+
+    .menu-filter-products-list{
+        flex-direction: row;
     }
 
     #mobile-open-btn{
