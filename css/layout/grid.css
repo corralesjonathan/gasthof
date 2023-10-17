@@ -1,4 +1,4 @@
-.ft-dishes-main-container {
+.dishes-main-container {
     display: grid;
     margin: var(--mg-lg) auto;
     align-items: center;
@@ -9,14 +9,14 @@
     margin-bottom: var(--mg-md);
 }
 
-.ft-dishes-container {
+.dishes-container {
     width: 80vw;
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 }
 
-.ft-dish-card {
+.dish-card {
     padding-bottom: 2rem;
     background: var(--clr-white);
     text-align: center;
@@ -24,17 +24,13 @@
     overflow: hidden;
 }
 
-.ft-dish-card:hover {
-    opacity: 1;
-}
-
-.ft-dish-card-img {
+.dish-card-img {
     position: relative;
     width: 100%;
     transition: transform 0.5s;
 }
 
-.ft-dish-data-container {
+.dish-data-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +38,7 @@
     text-align: left;
 }
 
-.ft-dish-card:hover .ft-dish-card-img {
+.dish-card:hover .dish-card-img {
     transform: scale(1.1);
 }
 

@@ -41,21 +41,6 @@
     margin-left: 2rem;
 }
 
-.nav-list-link{
-    color: var(--clr-main);
-    text-decoration: none;
-    font-size: var(--fs-sm);
-    font-family: var(--ff-secondary);
-    font-weight: var(--fw-rg);
-    text-transform: uppercase;
-    padding: .5rem;
-    transition: 0.5s;
-}
-
-.nav-list-link:hover{
-    background: var(--clr-main);
-    color: var(--clr-white);
-}
 
 .search-icon img {
     content: url('../../imgs/icons/search-icon.svg');
@@ -81,6 +66,12 @@
     border: 0;
     background-color: transparent;
     cursor: pointer;
+}
+
+.categories-buttons-container{
+    display: flex;
+    justify-content: center;
+    margin: var(--mg-sm) auto;
 }
 
 
