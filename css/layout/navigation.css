@@ -58,6 +58,7 @@
 .categories-buttons-container{
     display: flex;
     justify-content: center;
+    width: 80vw;
     margin: var(--mg-sm) auto;
 }
 
@@ -105,7 +106,7 @@
     }
 
     .menu-filter-products-list{
-        flex-direction: row;
+        flex-direction: column;
     }
 
     #mobile-open-btn{
@@ -116,6 +117,12 @@
     #mobile-close-btn{
         display: block;
     }
+
+    .categories-buttons-container{
+        justify-content: start ;
+        
+    }
+
   }
 
 
