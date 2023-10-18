@@ -1,38 +1,38 @@
-.top-nav-container{
+.top-nav-container {
     display: flex;
     background: var(--clr-white);
     justify-content: center;
-    padding-top: var(--mg-sm) ;
+    padding-top: var(--mg-sm);
     padding-bottom: var(--mg-sm);
 }
 
-.top-nav{
+.top-nav {
     display: flex;
     width: 80vw;
     justify-content: space-between;
     align-items: center;
 }
 
-.website-logo-container{
+.website-logo-container {
     height: auto;
     display: flex;
 
 }
 
-.website-logo{
-    
+.website-logo {
+
     max-width: 100%;
     height: auto;
-    
+
     position: relative;
 }
 
-#nav-container{
+#nav-container {
     display: flex;
     justify-content: center;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     align-items: center;
     padding: 0;
@@ -41,21 +41,22 @@
     margin-left: 2rem;
 }
 
-.icons_container{
+.icons_container {
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 1.25rem;
 }
 
-#mobile-open-btn, #mobile-close-btn{
+#mobile-open-btn,
+#mobile-close-btn {
     display: none;
     border: 0;
     background-color: transparent;
     cursor: pointer;
 }
 
-.categories-buttons-container{
+.categories-buttons-container {
     display: flex;
     justify-content: center;
     width: 80vw;
@@ -64,19 +65,19 @@
 
 
 @media (max-width: 767px) {
-    .website-logo-container{
+    .website-logo-container {
         order: 1;
     }
 
-    .icons_container{
+    .icons_container {
         display: none;
     }
-    
-    #nav-container{
+
+    #nav-container {
         opacity: 0;
         visibility: hidden;
 
-       
+
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -94,37 +95,37 @@
         transition: .5s;
     }
 
-    #nav-container.visible{
+    #nav-container.visible {
         opacity: 1;
         visibility: visible;
     }
 
-    .nav-list{
+    .nav-list {
         flex-direction: column;
         align-items: end;
         gap: 1rem;
     }
 
-    .menu-filter-products-list{
+    .menu-filter-products-list {
+        justify-content: center;
         flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        gap: 32px;
     }
 
-    #mobile-open-btn{
+    #mobile-open-btn {
         display: block;
         order: 2;
     }
 
-    #mobile-close-btn{
+    #mobile-close-btn {
         display: block;
     }
 
-    .categories-buttons-container{
-        justify-content: start ;
-        
+    .categories-buttons-container {
+        justify-content: center;
+
     }
 
-  }
-
-
-
-
+}
