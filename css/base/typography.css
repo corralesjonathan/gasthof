@@ -51,8 +51,9 @@
     text-transform: capitalize;
 }
 
-.nav-menu-list-link:active{
+.nav-menu-list-link.active{
     background: var(--clr-main);
+    color: var(--clr-white);
 }
 
 .dish-title{

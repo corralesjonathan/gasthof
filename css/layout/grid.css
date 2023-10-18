@@ -108,5 +108,9 @@
     .restaurant-data{
         text-align: center;
     }
+
+    .restaurant-data-column{
+        justify-content: center;
+    }
     
     }

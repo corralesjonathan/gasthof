@@ -41,19 +41,6 @@
     margin-left: 2rem;
 }
 
-
-.search-icon img {
-    content: url('../../imgs/icons/search-icon.svg');
-  }
-
-.bag-icon img{
-    content: url('../../imgs/icons/bag.svg');
-}
-
-.user-icon img{
-    content: url('../../imgs/icons/user.svg');
-}
-
 .icons_container{
     display: flex;
     align-items: center;

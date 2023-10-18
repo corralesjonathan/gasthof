@@ -1,21 +1,21 @@
+//get buttons by id
 let btnAll = document.getElementById('btnAll');
 let btnDesserts = document.getElementById('btnDesserts');
 let btnStarters = document.getElementById('btnStarters');
 let btnMainCourses = document.getElementById('btnMainCourses');
 let btnDrinks = document.getElementById('btnDrinks');
-let dishesContainer = document.querySelector('.dishes-container');
 
-// Agrega un evento click al botón "Todas"
-btnAll.addEventListener('click', () => filterProducts('all'));
+//add event "click" for all categories button
+btnAll.addEventListener('click', () => filterDishes('all'));
 
-// Agrega un evento click a cada botón de categoría
-btnDesserts.addEventListener('click', () => filterProducts('desserts'));
-btnStarters.addEventListener('click', () => filterProducts('starters'));
-btnMainCourses.addEventListener('click', () => filterProducts('main-courses'));
-btnDrinks.addEventListener('click', () => filterProducts('drinks'));
+//add event "click" for each category button
+btnDesserts.addEventListener('click', () => filterDishes('desserts'));
+btnStarters.addEventListener('click', () => filterDishes('starters'));
+btnMainCourses.addEventListener('click', () => filterDishes('main-courses'));
+btnDrinks.addEventListener('click', () => filterDishes('drinks'));
 
-// Modifica la función filterProducts para mostrar todas las categorías
-function filterProducts(category) {
+//function to filter dishes by category
+function filterDishes(category) {
     let dishCard = document.querySelectorAll('.dish-card');
     dishCard.forEach(card => {
         if (category === 'all' || card.getAttribute('data-category') === category) {
@@ -23,8 +23,43 @@ function filterProducts(category) {
         } else {
             card.style.display = 'none';
         }
+
+        activeButton(category);
     });
 }
+//function to add and delete "active" class
+function activeButton(category){
+    
+    if (category === 'all') {
+        btnAll.classList.add("active");
+    } else {
+        btnAll.classList.remove("active");
+    }
 
-// Inicialmente, muestra todas las categorías
-filterProducts('all');
+    if (category === 'desserts') {
+        btnDesserts.classList.add("active");
+    } else {
+        btnDesserts.classList.remove("active");
+    }
+
+    if (category === 'main-courses') {
+        btnMainCourses.classList.add("active");
+    } else {
+        btnMainCourses.classList.remove("active");
+    }
+
+    if (category === 'starters') {
+        btnStarters.classList.add("active");
+    } else {
+        btnStarters.classList.remove("active");
+    }
+
+    if (category === 'drinks') {
+        btnDrinks.classList.add("active");
+    } else {
+        btnDrinks.classList.remove("active");
+    }
+}
+
+//show all by defalult
+filterDishes('all');

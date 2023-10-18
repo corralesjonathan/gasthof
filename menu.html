@@ -15,53 +15,46 @@
 </head>
 
 <body>
+    <!--header & hero-->
     <header class="hero-background menu-header-background">
+        <!--nav-->
         <div class="top-nav-container">
             <nav class="top-nav">
-
                 <button id="mobile-open-btn"> <img src="./imgs/icons/mobile-btn.svg" alt=""></button>
-
                 <div class="website-logo-container">
                     <img src="./imgs/icons/website-logo.svg" alt="Gasthof logo" class="website-logo">
                 </div>
-
                 <div id="nav-container">
                     <button id="mobile-close-btn"><img src="./imgs/icons/close.svg" alt=""></button>
                     <ul class="nav-list">
-                        <li><a class="nav-list-link" href="index.html">Home</a></li>
+                        <li><a class="nav-list-link" href="home.html">Home</a></li>
                         <li><a class="nav-list-link" href="menu.html">Menu</a></li>
                         <li><a class="nav-list-link" href="#">Contact</a></li>
                         <li><a class="nav-list-link" href="#">About Us</a></li>
                     </ul>
 
                 </div>
-
-
-
                 <div class="icons_container">
                     <a class="user-icon" href="#"><img src="./imgs/icons/user.svg"></a>
                     <a class="search-icon" href="#"><img src="./imgs/icons/search-form.svg"></a>
                     <a class="bag-icon" href="#"><img src="./imgs/icons/bag.svg"></a>
-
                 </div>
-
-
-
             </nav>
         </div>
-
+        <!--nav-->
         <div class="hero-container">
             <div class="menu-header-texts-container">
                 <h3 class="home-title1 menu-header-title">discover</h3>
                 <h1 class="home-title2 menu-header-title">our menu</h1>
-
             </div>
         </div>
-        </div>
     </header>
+    <!--header & hero-->
 
+    <!--main content-->
     <main>
         <div class="dishes-main-container">
+            <!--filter dishes menu-->
             <div class="categories-buttons-container">
                 <ul class="nav-list menu-filter-products-list">
                     <li><a id="btnAll" class="nav-list-link nav-menu-list-link" href="#">All</a></li>
@@ -71,6 +64,9 @@
                     <li><a id="btnDrinks" class="nav-list-link nav-menu-list-link" href="#">Drinks</a></li>
                 </ul>
             </div>
+            <!--filter dishes menu-->
+
+            <!--dishes cards grid-->
             <div class="dishes-container">
                 <section class="dish-card" data-category="main-courses">
                     <img src="./imgs/main-courses/schnitzel.jpg" alt="" class="dish-card-img">
@@ -266,12 +262,33 @@
                 </section>
 
             </div>
+            <!--dishes cards grid-->
+
+            <!--subscribe form-->
+            <div class="subscribe-form-container">
+                <div class="form-titles-container">
+                    <h3 class="home-title1">subscribe now</h3>
+                    <h2 class="home-title2">join the family</h2>
+                </div>
+                <form class="subscribe-form" action="">
+                    <input class="email email-focus" type="text" placeholder="Email Address">
+                    <input class="submit-btn" type="submit" value="">
+                </form>
+            </div>
+            <!--subscribe form-->
         </div>
     </main>
+    <!--main content-->
 
+    <!--footer-->
+    <!--footer-->
+
+    <!--script-->
     <script src="./js/MobileNav.js"></script>
     <script src="./js/currentYear.js"></script>
     <script src="./js/filterMenu.js"></script>
+    <!--script-->
+
 </body>
 
 </html>
