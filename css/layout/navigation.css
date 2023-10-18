@@ -63,6 +63,13 @@
     margin: var(--mg-sm) auto;
 }
 
+.filter-dishes-menu-container{
+    background: var(--clr-white);
+    box-shadow: var(--bs-main);
+    width: 400px;
+    padding: 1rem;
+}
+
 
 @media (max-width: 767px) {
     .website-logo-container {
@@ -111,7 +118,7 @@
         flex-direction: column;
         align-items: center;
         margin-left: 0;
-        gap: 32px;
+        gap: 2rem;
     }
 
     #mobile-open-btn {
@@ -125,7 +132,10 @@
 
     .categories-buttons-container {
         justify-content: center;
+    }
 
+    .filter-dishes-menu-container{
+        width:auto;
     }
 
 }

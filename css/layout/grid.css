@@ -98,6 +98,16 @@
    height: 4rem;
 }
 
+.menu-container{
+    display: flex;
+    gap: 2rem;
+    width: 80vw;
+}
+
+.filters-container{
+    display: block;
+}
+
 
 @media (max-width: 768px){
    
@@ -111,6 +121,14 @@
 
     .restaurant-data-column{
         justify-content: center;
+    }
+
+    .filters-container{
+        display: none;
+    }
+
+    .menu-container{
+        flex-direction: column;
     }
     
     }

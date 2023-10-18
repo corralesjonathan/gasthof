@@ -54,20 +54,39 @@
     <!--main content-->
     <main>
         <div class="dishes-main-container">
-            <!--filter dishes menu-->
-            <div class="categories-buttons-container">
-                <ul class="nav-list menu-filter-products-list">
-                    <li><a id="btnAll" class="nav-list-link nav-menu-list-link" href="#">All</a></li>
-                    <li><a id="btnStarters" class="nav-list-link nav-menu-list-link" href="#">Starters</a></li>
-                    <li><a id="btnMainCourses" class="nav-list-link nav-menu-list-link" href="#">Main courses</a></li>
-                    <li><a id="btnDesserts" class="nav-list-link nav-menu-list-link" href="#">Desserts</a></li>
-                    <li><a id="btnDrinks" class="nav-list-link nav-menu-list-link" href="#">Drinks</a></li>
-                </ul>
-            </div>
-            <!--filter dishes menu-->
             <!--dishes cards grid-->
             <div class="menu-container">
-                
+                <div class="filter-dishes-menu-container">
+                    <h2 class="filter-dishes-title">our menu</h2>
+                    <div class="filters-container">
+                    <div class="categories">
+                        <h3 class="dish-price filters-titles">Categories</h3>
+                        <hr size="1px" color="#8E8E8E" />
+                        <ul style="padding-left: 0;">
+                            <li style="list-style-type: none; ">
+                                <input id="btnAll" type="checkbox" >
+                                <label class="dish-price" for="all">View all</label>
+                            </li>
+                            <li style="list-style-type: none; ">
+                                <input id="btnStarters" type="checkbox" >
+                                <label class="dish-price" for="starters">Starters</label>
+                            </li>
+                            <li style="list-style-type: none; ">
+                                <input id="btnMainCourses" type="checkbox" >
+                                <label class="dish-price" for="main-courses">Main courses</label>
+                            </li>
+                            <li style="list-style-type: none; ">
+                                <input id="btnDesserts" type="checkbox" >
+                                <label class="dish-price" for="desserts">Desserts</label>
+                            </li>
+                            <li style="list-style-type: none; ">
+                                <input id="btnDrinks" type="checkbox" >
+                                <label class="dish-price" for="drinks">Drinks</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>  
             <div class="dishes-container">
                 <section class="dish-card" data-category="main-courses">
                     <img src="./imgs/main-courses/schnitzel.jpg" alt="" class="dish-card-img">

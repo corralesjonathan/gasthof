@@ -141,6 +141,22 @@
     text-decoration: none;
 }
 
+.filter-dishes-title{
+    text-transform: uppercase;
+
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-nm);
+    font-weight: var(--fw-sb);
+
+    color: var(--clr-white);
+    background: var(--clr-main);
+    padding: .5rem;
+}
+
+.filters-titles{
+    text-transform: uppercase;
+}
+
 .menu-header-title{
     color: var(--clr-white);
 }
