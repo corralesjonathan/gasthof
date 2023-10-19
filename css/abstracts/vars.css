@@ -27,6 +27,8 @@
     --clr-black: hsla(0, 0%, 0%, 1);
     /* box-shadows */
     --bs-main: hsla(210, 8%, 62%, 0.2) 0px 8px 24px;
+    --bs-button: hsla(1, 81%, 34%, 0.30) 0px 8px 28px;
+    --bs-button-hover: hsla(1, 81%, 34%, 0.55) 0px 8px 28px;
     /*margins*/
     --mg-xl: 10rem; /* 160px*/
     --mg-lg: 7.5rem; /* 120px*/

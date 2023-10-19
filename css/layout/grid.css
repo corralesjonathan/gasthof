@@ -108,6 +108,38 @@
     display: block;
 }
 
+.dish-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80vw;
+    margin: var(--mg-md) auto;
+    gap: 4rem;
+}
+
+.dish-img-container{
+    overflow: hidden;
+    position: relative;
+}
+
+.dish-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dish-info-container{
+    text-align: left;
+    margin-top: var(--mg-sm);
+
+}
+
+.add-cart-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: var(--mg-nm);
+}
+
 
 @media (max-width: 768px){
    
@@ -129,6 +161,10 @@
 
     .menu-container{
         flex-direction: column;
+    }
+
+    .dish-container{
+        grid-template-columns: 1fr;
     }
     
     }

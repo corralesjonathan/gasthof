@@ -161,6 +161,25 @@
     color: var(--clr-white);
 }
 
+.single-dish-title {
+    font-size: var(--fs-md);
+    margin: 0;
+}
+
+.single-dish-price{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-md);
+    color: var(--clr-gray);
+    margin: 1rem auto;
+}
+
+.dish-description{
+    font-size: var(--fs-sm);
+    margin-bottom: 1rem;
+}
+
+
 .footer-legal{
     font-family: var(--ff-secondary);
     font-weight: var(--fw-lg);

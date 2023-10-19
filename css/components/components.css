@@ -1,8 +1,6 @@
 .btn {
     /*border & color styles*/
-    border-style: solid;
-    border-width: .0625rem;
-    border-color: var(--clr-white);
+    border: .0625rem solid var(--clr-white);
     padding: .5rem 1rem;
     color: var(--clr-white);
 
@@ -52,27 +50,45 @@
 
 .view-all {
     border-color: var(--clr-main);
-    color: var(--clr-main);
+    background: var(--clr-main);
+    color: var(--clr-white);
     margin: var(--mg-nm) auto;
     margin-bottom: 0;
+    box-shadow: var(--bs-button);
 }
 
 .view-all:hover {
+    box-shadow: var(--bs-button-hover);
     background: var(--clr-main);
     color: var(--clr-white);
+    opacity: .9;
 }
 
 .read-more2 {
-    border-color: var(--clr-main);
-    color: var(--clr-main);
+    background: var(--clr-main);
+    color: var(--clr-white);
     margin-top: var(--mg-sm);
     display: inline-block;
+    box-shadow: var(--bs-button);
+    border: none;
 }
 
 .read-more2:hover {
-    border-color: var(--clr-main);
+    box-shadow: var(--bs-button-hover);
+    opacity: .9;
+}
+
+.add-cart{
     background: var(--clr-main);
-    color: var(--clr-white);
+    padding: .5rem 4rem;
+    box-shadow: var(--bs-button);
+    border: none;
+    
+}
+
+.add-cart:hover{
+    box-shadow: var(--bs-button-hover);
+    opacity: .9;
 }
 
 .submit-btn {
