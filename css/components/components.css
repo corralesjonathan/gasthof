@@ -91,6 +91,18 @@
     opacity: .9;
 }
 
+.language{
+    background: var(--clr-white);
+    border-color: var(--clr-main);
+    color: var(--clr-main);
+    cursor: pointer;
+}
+
+.language:hover{
+    background: var(--clr-main);
+    color: var(--clr-white);
+}
+
 .submit-btn {
     background: url(../../imgs/icons/submit.svg);
     border: none;

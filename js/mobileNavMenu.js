@@ -13,5 +13,3 @@
     close.addEventListener("click", () =>{
         nav.classList.remove("visible");
     })
-    
-//mobile-nav-menu

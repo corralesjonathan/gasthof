@@ -20,6 +20,8 @@ function selectedPage() {
         btnAboutUs.classList.add("active");
     }
 }
+
+//main loading
 document.addEventListener("DOMContentLoaded", function () {
     selectedPage();
 });

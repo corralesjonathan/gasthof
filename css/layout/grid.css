@@ -130,7 +130,12 @@
 .dish-info-container{
     text-align: left;
     margin-top: var(--mg-sm);
+}
 
+.language-btn-container{
+    margin-bottom: 2rem; 
+    gap: 1rem; 
+    display: flex;
 }
 
 .add-cart-container{

@@ -177,6 +177,7 @@
 .dish-description{
     font-size: var(--fs-sm);
     margin-bottom: 1rem;
+    text-transform: none;
 }
 
 

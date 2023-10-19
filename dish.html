@@ -26,10 +26,10 @@
                 <div id="nav-container">
                     <button id="mobile-close-btn"><img src="./imgs/icons/close.svg" alt=""></button>
                     <ul class="nav-list">
-                        <li><a page="home" id="btnHome" class="nav-list-link" href="home.html">Home</a></li>
-                        <li><a page="menu" id="btnMenu" class="nav-list-link" href="menu.html">Menu</a></li>
-                        <li><a page="contact" id="btnContact" class="nav-list-link" href="#">Contact</a></li>
-                        <li><a page="aboutUs" id="btnAboutUs" class="nav-list-link" href="#">About Us</a></li>
+                        <li><a id="btnHome" class="nav-list-link" href="home.html">Home</a></li>
+                        <li><a id="btnMenu" class="nav-list-link" href="menu.html">Menu</a></li>
+                        <li><a id="btnContact" class="nav-list-link" href="#">Contact</a></li>
+                        <li><a id="btnAboutUs" class="nav-list-link" href="#">About Us</a></li>
                     </ul>
                 </div>
                 <!--nav menu & mobile btn-->
@@ -54,10 +54,14 @@
                 <img class="dish-img" src="./imgs/single-dish/starters/kartoffelpuffer.jpg" alt="">
             </div>
             <div class="dish-info-container">
-                <h2 class="single-dish-title  dish-title">Kartoffelpuffer</h2>
-                <p class="dish-type">Starter</p>
-                <p class="single-dish-price">$6.90</p>
-                <p class="dish-type dish-description">Potato pancakes are shallow fried pancakes of grated or ground potato, 
+                <div class="language-btn-container">
+                    <button id="btnEN" language="english" class="btn language">EN</button>
+                    <button id="btnDE" language="deutsch" class="btn language">DE</button>
+                </div>
+                <h2 id="dish-title" class="single-dish-title  dish-title">Kartoffelpuffer</h2>
+                <p id="dish-category" class="dish-type">Starter</p>
+                <p id="dish-price" class="single-dish-price">$6.90</p>
+                <p id="dish-description" class="dish-type dish-description">Potato pancakes are shallow fried pancakes of grated or ground potato, 
                     matzo meal, and a binding ingredient such as egg or applesauce, often flavored with grated garlic or onion and seasonings.</p>
                 <img src="./imgs/icons/family.svg" alt="Family">
                 <div class="add-cart-container">
@@ -205,6 +209,7 @@
     <!--script-->
     <script src="./js/mobileNavMenu.js"></script>
     <script src="./js/navMenu.js"></script>
+    <script src="./js/changeLanguage.js"></script>
     <script src="./js/currentYear.js"></script>
     <!--script-->
 </body>
