@@ -4,6 +4,10 @@
     justify-content: center;
     padding-top: var(--mg-sm);
     padding-bottom: var(--mg-sm);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .top-nav {
@@ -39,6 +43,11 @@
     gap: 1rem;
     list-style-type: none;
     margin-left: 2rem;
+}
+
+.nav-list.active{
+    background: var(--clr-main);
+    color: var(--clr-white);
 }
 
 .icons_container {
@@ -90,14 +99,17 @@
         align-items: end;
         gap: 1rem;
         justify-content: start;
-        position: absolute;
+        position: fixed;
+    top: 0;
+   
+    right: 0;
         width: auto;
         top: 0;
         right: 0;
         background-color: var(--clr-white);
         padding: 1rem;
         bottom: 0;
-        z-index: 1;
+        z-index: 200;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
         transition: .5s;
     }

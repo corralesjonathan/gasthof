@@ -47,13 +47,13 @@
     color: var(--clr-white);
 }
 
-.nav-menu-list-link{
-    text-transform: capitalize;
+.nav-list-link.active{
+    background: var(--clr-main);
+    color: var(--clr-white); 
 }
 
-.nav-menu-list-link.active{
-    background: var(--clr-main);
-    color: var(--clr-white);
+.nav-menu-list-link{
+    text-transform: capitalize;
 }
 
 .dish-title{

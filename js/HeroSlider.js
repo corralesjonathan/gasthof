@@ -27,6 +27,6 @@ function showHeroSlides(n) {
 
 let autoHeroSlideInterval = setInterval(function () {
     plusHeroSlides(1);
-}, 6000); // Cambiar de slide cada 6 segundos
+}, 6000); //change slide every six seconds
     
 

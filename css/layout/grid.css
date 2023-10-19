@@ -112,7 +112,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 80vw;
-    margin: var(--mg-md) auto;
+    margin: var(--mg-lg) auto;
     gap: 4rem;
 }
 

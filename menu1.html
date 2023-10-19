@@ -24,21 +24,24 @@
                 <div class="website-logo-container">
                     <img src="./imgs/icons/website-logo.svg" alt="Gasthof logo" class="website-logo">
                 </div>
+                <!--nav menu & mobile btn-->
                 <div id="nav-container">
                     <button id="mobile-close-btn"><img src="./imgs/icons/close.svg" alt=""></button>
                     <ul class="nav-list">
-                        <li><a class="nav-list-link" href="home.html">Home</a></li>
-                        <li><a class="nav-list-link" href="menu.html">Menu</a></li>
-                        <li><a class="nav-list-link" href="#">Contact</a></li>
-                        <li><a class="nav-list-link" href="#">About Us</a></li>
+                        <li><a page="home" id="btnHome" class="nav-list-link" href="home.html">Home</a></li>
+                        <li><a page="menu" id="btnMenu" class="nav-list-link" href="menu.html">Menu</a></li>
+                        <li><a page="contact" id="btnContact" class="nav-list-link" href="#">Contact</a></li>
+                        <li><a page="aboutUs" id="btnAboutUs" class="nav-list-link" href="#">About Us</a></li>
                     </ul>
-
                 </div>
+                <!--nav menu & mobile btn-->
+                <!--nav icons-->
                 <div class="icons_container">
+                    <a class="search-icon" href="#"><img src="./imgs/icons/search-icon.svg"></a>
                     <a class="user-icon" href="#"><img src="./imgs/icons/user.svg"></a>
-                    <a class="search-icon" href="#"><img src="./imgs/icons/search-form.svg"></a>
                     <a class="bag-icon" href="#"><img src="./imgs/icons/bag.svg"></a>
                 </div>
+                <!--nav icons-->
             </nav>
         </div>
         <!--nav-->
@@ -362,8 +365,10 @@
 
     <!--script-->
     <script src="./js/MobileNav.js"></script>
+    <script src="./js/navMenu.js"></script>
     <script src="./js/currentYear.js"></script>
     <script src="./js/filterMenu.js"></script>
+    <script src="./js/mobileNavMenu.js"></script>
     <!--script-->
 </body>
 </html>
