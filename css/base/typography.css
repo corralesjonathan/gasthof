@@ -1,7 +1,7 @@
 /*used in hero titles*/
 .hero-title1{
     font-family: var(--ff-main);
-    font-size: clamp(var(--fs-md), var(--fs-lg), var(--fs-xl));
+    font-size: clamp(var(--fs-lg), 4rem, var(--fs-xl));
     font-weight: var(--fw-rg);
     margin: 0;
 }
@@ -9,14 +9,14 @@
 /*used in hero titles*/
 .hero-title2{
     font-family: var(--ff-main);
-    font-size: clamp(var(--fs-xl), var(--fs-xxl), 7rem);
+    font-size: clamp(var(--fs-xl), 7rem, var(--fs-xxl));
     font-weight: var(--fw-bk);
     margin: 0;
 }
 /*used in hero paragraph*/
 .hero-text{
     font-family: var(--ff-secondary);
-    font-size: var(--fs-sm);
+    font-size: clamp(var(--fs-esm), var(--fs-sm), var(--fs-nm));
     font-weight: var(--fw-lg);
     margin: 0;
 }
@@ -25,18 +25,20 @@
 .home-title1{
     color: var(--clr-gray);
     font-family: var(--ff-main);
-    font-size: var(--fs-lg);
+    font-size: clamp(1rem,var(--fs-lg), var(--fs-xl));
     font-weight: var(--fw-rg);
     margin: 0;
+    width: 17ch;
 }
 
 /*used for website sections title*/
 .home-title2{
     color: var(--clr-main);
     font-family: var(--ff-main);
-    font-size: var(--fs-xl);
+    font-size: clamp(var(--fs-lg), var(--fs-xl), var(--fs-xxl));
     font-weight: var(--fw-bk);
     margin: 0;
+    width: 15ch;
 }
 
 /*used for dishes titles*/
@@ -109,6 +111,8 @@
     background: var(--clr-main);
     padding: .5rem;
 }
+
+.single-dish-title{ font-size: var(--fs-md);}
 
 .single-dish-price{font-size: var(--fs-md);}
 
