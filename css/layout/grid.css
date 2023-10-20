@@ -114,6 +114,11 @@
     margin: var(--mg-lg) auto;
     gap: 4rem;
 }
+.dish-title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .dish-img-container{
     overflow: hidden;
