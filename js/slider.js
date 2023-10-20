@@ -25,38 +25,26 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-// Agregar la función para avanzar automáticamente los slides cada 3 segundos (ajusta este valor según tus necesidades)
+//function to advance slide every 4 seconds
 let autoSlideInterval = setInterval(function () {
     plusSlides(1);
-}, 4000); // Cambiar de slide cada 4 segundos
+}, 4000);
 
-// Agregar manejo de eventos para detener/reiniciar el temporizador al interactuar con los puntos
+//function to stop the slider when the mouse enters or exits the dot
 let dots = document.getElementsByClassName("dot");
 for (let i = 0; i < dots.length; i++) {
     dots[i].addEventListener("mouseover", function () {
-        clearInterval(autoSlideInterval); // Detener el temporizador al pasar el mouse por encima
+        clearInterval(autoSlideInterval); //stop slider with mouseover
     });
     dots[i].addEventListener("mouseout", function () {
         autoSlideInterval = setInterval(function () {
             plusSlides(1);
-        }, 4000); // Reiniciar el temporizador cuando se libera el puntero
+        }, 4000); //restart timer when the mouse exit the dot
     });
 }
 
-// Agregar manejo de eventos para detener el temporizador cuando el mouse entra en el contenedor
-let sliderContainer = document.getElementById("slider-container");
-sliderContainer.addEventListener("mouseover", function () {
-    clearInterval(autoSlideInterval);
-});
 
-// Agregar manejo de eventos para reiniciar el temporizador cuando el mouse sale del contenedor
-sliderContainer.addEventListener("mouseout", function () {
-    autoSlideInterval = setInterval(function () {
-        plusSlides(1);
-    }, 4000); // Reiniciar el temporizador cuando se sale del contenedor
-});
-
-// Agregar manejo de eventos para cambiar las diapositivas deslizando horizontalmente en dispositivos móviles
+//add a way to scroll to change the slide on mobile
 let touchStartX = null;
 let touchEndX = null;
 
@@ -67,11 +55,11 @@ document.getElementById("slider-container").addEventListener("touchstart", funct
 document.getElementById("slider-container").addEventListener("touchend", function (e) {
     touchEndX = e.changedTouches[0].clientX;
 
-    // Determinar la dirección del deslizamiento
+    //cheack the scroll direction
     if (touchStartX - touchEndX > 50) {
-        plusSlides(1); // Deslizar hacia la izquierda para avanzar
+        plusSlides(1); //left to move forward
     } else if (touchEndX - touchStartX > 50) {
-        plusSlides(-1); // Deslizar hacia la derecha para retroceder
+        plusSlides(-1); //right to move forward
     }
 });
 

@@ -4,6 +4,7 @@
     background: var(--clr-main);
 }
 
+/*container for restaurant icon*/
 .footer-website-icon-container {
     display: grid;
     width: 80vw;
@@ -35,8 +36,12 @@
     list-style-type: none;
 }
 
-@media (max-width: 768px) {
+.footer-hr{
+    size: .0625rem;
+    color: var(--clr-white);
+}
 
+@media (max-width: 768px) {
     .footer-content {
         grid-template-columns: 1fr;
     }
@@ -44,5 +49,4 @@
     .footer-links{
         grid-template-columns: 1fr;
     }
-
 }

@@ -36,9 +36,9 @@
 
                 <!--nav icons-->
                 <div class="icons_container">
-                    <a class="search-icon" href="#"><img src="./imgs/icons/search-icon.svg"></a>
-                    <a class="user-icon" href="#"><img src="./imgs/icons/user.svg"></a>
-                    <a class="bag-icon" href="#"><img src="./imgs/icons/bag.svg"></a>
+                    <a class="search-icon" href="#"><img src="./imgs/icons/search-icon.svg" alt="Search"></a>
+                    <a class="user-icon" href="#"><img src="./imgs/icons/user.svg" alt="Account"></a>
+                    <a class="bag-icon" href="#"><img src="./imgs/icons/bag.svg" alt="Bag"></a>
                 </div>
                 <!--nav icons-->
             </nav>
@@ -55,13 +55,13 @@
             </div>
             <div class="dish-info-container">
                 <div class="language-btn-container">
-                    <button id="btnEN" language="english" class="btn language">EN</button>
-                    <button id="btnDE" language="deutsch" class="btn language">DE</button>
+                    <button id="btnEN" class="btn order ">EN</button>
+                    <button id="btnDE" class="btn order ">DE</button>
                 </div>
-                <h2 id="dish-title" class="single-dish-title  dish-title">Kartoffelpuffer</h2>
+                <h2 id="dish-title" class="slide-title dish-title">Kartoffelpuffer</h2>
                 <p id="dish-category" class="dish-type">Starter</p>
-                <p id="dish-price" class="single-dish-price">$6.90</p>
-                <p id="dish-description" class="dish-type dish-description">Potato pancakes are shallow fried pancakes of grated or ground potato, 
+                <p id="dish-price" class="single-dish-price dish-price">$6.90</p>
+                <p id="dish-description" class="dish-type slide-description">Potato pancakes are shallow fried pancakes of grated or ground potato, 
                     matzo meal, and a binding ingredient such as egg or applesauce, often flavored with grated garlic or onion and seasonings.</p>
                 <img src="./imgs/icons/family.svg" alt="Family">
                 <div class="add-cart-container">
@@ -80,49 +80,49 @@
             </div>
             <div class="dishes-container">
                 <section class="dish-card">
-                    <img src="./imgs/schnitzel.jpg" alt="" class="dish-card-img">
+                    <img src="./imgs/schnitzel.jpg" alt="Schnitzel" class="dish-card-img">
                     <div class="dish-data-container">
                         <div>
                             <h2 class="dish-title">Schnitzel</h2>
                             <p class="dish-type">Main course</p>
                         </div>
-                        <a href="#"><img src="./imgs/icons/cart.svg"></a>
+                        <a href="#"><img src="./imgs/icons/cart.svg" alt="Cart"></a>
                     </div>
                     <p class="dish-price">$5.90</p>
                     <a class="btn order" href="">Order</a>
                 </section>
                 <section class="dish-card">
-                    <img src="./imgs/spätzle.jpg" alt="" class="dish-card-img">
+                    <img src="./imgs/spätzle.jpg" alt="Spätzle" class="dish-card-img">
                     <div class="dish-data-container">
                         <div>
                             <h2 class="dish-title">Spätzle</h2>
                             <p class="dish-type">Main course</p>
                         </div>
-                        <a href="#"><img src="./imgs/icons/cart.svg"></a>
+                        <a href="#"><img src="./imgs/icons/cart.svg" alt="Cart"></a>
                     </div>
                     <p class="dish-price">$6.85</p>
                     <a class="btn order" href="">Order</a>
                 </section>
                 <section class="dish-card">
-                    <img src="./imgs/käsekuchen.jpg" alt="" class="dish-card-img">
+                    <img src="./imgs/käsekuchen.jpg" alt="Käsekuchen" class="dish-card-img">
                     <div class="dish-data-container">
                         <div>
                             <h2 class="dish-title">Käsekuchen</h2>
                             <p class="dish-type">Dessert</p>
                         </div>
-                        <a href="#"><img src="./imgs/icons/cart.svg"></a>
+                        <a href="#"><img src="./imgs/icons/cart.svg" alt="Cart"></a>
                     </div>
                     <p class="dish-price">$7.25</p>
                     <a class="btn order" href="">Order</a>
                 </section>
                 <section class="dish-card">
-                    <img src="./imgs/kartoffelpuffer.jpg" alt="" class="dish-card-img">
+                    <img src="./imgs/kartoffelpuffer.jpg" alt="Kartoffelpuffer" class="dish-card-img">
                     <div class="dish-data-container">
                         <div>
                             <h2 class="dish-title">Kartoffelpuffer </h2>
                             <p class="dish-type">Starter</p>
                         </div>
-                        <a href="#"><img src="./imgs/icons/cart.svg"></a>
+                        <a href="#"><img src="./imgs/icons/cart.svg" alt="Cart"></a>
                     </div>
                     <p class="dish-price">$6.25</p>
                     <a class="btn order" href="">Order</a>
@@ -137,7 +137,7 @@
                 <h3 class="home-title1">subscribe now</h3>
                 <h2 class="home-title2">join the family</h2>
             </div>
-            <form class="subscribe-form" action="">
+            <form class="subscribe-form">
                 <input class="email email-focus" type="text" placeholder="Email Address">
                 <input class="submit-btn" type="submit" value="">
             </form>
@@ -153,8 +153,8 @@
         </div>
         <div class="footer-content">
             <!--social links-->
-            <section>
-                <hr size="1px" color="white" />
+            <div>
+                <hr class="footer-hr">
                 <div class="social-icons-container">
                     <a href="https://www.facebook.com/" target="_blank"> <img src="./imgs/icons/facebook.svg"
                             alt="Facebook"></a>
@@ -163,12 +163,12 @@
                     <a href="https://www.tiktok.com/explore" target="_blank"><img src="./imgs/icons/tiktok.svg"
                             alt="TikTok"></a>
                 </div>
-            </section>
+            </div>
             <!--social links-->
             <div class="footer-links">
                 <!--explore-->
                 <section>
-                    <hr size="1px" color="white" />
+                    <hr class="footer-hr">
                     <h2 class="dish-title footer-titles">explore</h2>
                     <ul class="nav-footer-list">
                         <li><a class="nav-footer-link" href="home.html">Home</a></li>
@@ -179,7 +179,7 @@
                 <!--explore-->
                 <!--contact us-->
                 <section>
-                    <hr size="1px" color="white" />
+                    <hr class="footer-hr">
                     <h2 class="dish-title footer-titles">CONTACT US</h2>
                     <ul class="nav-footer-list">
                         <li><a class="nav-footer-link" href="tel:+490304664553700">+490304664553700</a></li>
@@ -190,7 +190,7 @@
                 <!--contact us-->
                 <!--legal-->
                 <section>
-                    <hr size="1px" color="white" />
+                    <hr class="footer-hr">
                     <h2 class="dish-title footer-titles">LEGAL</h2>
                     <ul class="nav-footer-list">
                         <li><a class="nav-footer-link" href="#">Terms</a></li>

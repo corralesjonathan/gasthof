@@ -22,6 +22,7 @@
 }
 
 .hero-texts-container {
+    color: var(--clr-white);
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -88,7 +89,6 @@
 
 
 @media (max-width: 768px) {
-
     .hero-buttons-container,
     .hero-img-container {
         justify-content: center;
@@ -99,8 +99,5 @@
         gap: var(--mg-sm);
     }
 
-    .hero-texts-container {
-        text-align: center;
-    }
-
+    .hero-texts-container {text-align: center;}
 }

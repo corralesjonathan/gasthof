@@ -20,14 +20,12 @@
 .website-logo-container {
     height: auto;
     display: flex;
-
 }
 
 .website-logo {
 
     max-width: 100%;
     height: auto;
-
     position: relative;
 }
 
@@ -36,16 +34,53 @@
     justify-content: center;
 }
 
+.nav-list-link{
+    color: var(--clr-main);
+    text-decoration: none;
+    font-size: var(--fs-sm);
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-rg);
+    text-transform: uppercase;
+    padding: .5rem;
+    transition: 0.5s;
+}
+
+.nav-list-link:hover{
+    background: var(--clr-main);
+    color: var(--clr-white);
+}
+
+.nav-list-link.active{
+    background: var(--clr-main);
+    color: var(--clr-white); 
+}
+
+.nav-menu-list-link{
+    text-transform: capitalize;
+    transition: 0s;
+}
+
+.nav-menu-list-link:hover{
+    border-bottom: 3px solid;
+    background: transparent;
+    color: var(--clr-main);
+}
+
+.nav-menu-list-link.active{
+    border-bottom: 3px solid;
+    background: transparent;
+    color: var(--clr-main);
+}
+
 .nav-list {
     display: flex;
     align-items: center;
     padding: 0;
     gap: 1rem;
     list-style-type: none;
-    margin-left: 2rem;
 }
 
-.nav-list.active{
+.nav-list.active {
     background: var(--clr-main);
     color: var(--clr-white);
 }
@@ -72,7 +107,7 @@
     margin: var(--mg-sm) auto;
 }
 
-.filter-dishes-menu-container{
+.filter-dishes-menu-container {
     background: var(--clr-white);
     box-shadow: var(--bs-main);
     width: 400px;
@@ -92,23 +127,18 @@
     #nav-container {
         opacity: 0;
         visibility: hidden;
-
-
         display: flex;
         flex-direction: column;
         align-items: end;
         gap: 1rem;
         justify-content: start;
         position: fixed;
-    top: 0;
-   
-    right: 0;
-        width: auto;
         top: 0;
         right: 0;
-        background-color: var(--clr-white);
-        padding: 1rem;
         bottom: 0;
+        width: auto;
+        background-color: var(--clr-main-bg);
+        padding: 1rem;
         z-index: 200;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
         transition: .5s;
@@ -122,7 +152,7 @@
     .nav-list {
         flex-direction: column;
         align-items: end;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .menu-filter-products-list {
@@ -146,8 +176,8 @@
         justify-content: center;
     }
 
-    .filter-dishes-menu-container{
-        width:auto;
+    .filter-dishes-menu-container {
+        width: auto;
     }
 
 }

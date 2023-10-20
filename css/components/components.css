@@ -1,34 +1,26 @@
-.btn {
-    /*border & color styles*/
+/*main button*/
+.btn { 
     border: .0625rem solid var(--clr-white);
-    padding: .5rem 1rem;
     color: var(--clr-white);
-
-    /*font styles*/
     font-family: var(--ff-secondary);
-    font-weight: var(--fw-md);
     font-size: var(--fs-esm);
-    text-transform: uppercase;
+    font-weight: var(--fw-md);
+    padding: .5rem 1rem;
     text-decoration: none;
-
-    /*transitions*/
+    text-transform: uppercase;
     transition: 0.5s ease-out;
 }
 
-.read-more {
-    border-color: var(--clr-white);
-    color: var(--clr-white);
-}
-
-.read-more:hover {
+.btn:hover{
     background: var(--clr-white);
     color: var(--clr-main);
 }
 
+/*used in hero texts*/
 .view-menu {
     background: var(--clr-main);
-    color: var(--clr-white);
     border: none;
+    color: var(--clr-white);
 }
 
 .view-menu:hover {
@@ -36,11 +28,11 @@
     color: var(--clr-main);
 }
 
+/*used in dishes cards and slider*/
 .order {
     border-color: var(--clr-main);
     color: var(--clr-main);
-    padding: .5rem 2rem;
-    display: inline-block;
+    background: transparent;
 }
 
 .order:hover {
@@ -48,66 +40,42 @@
     color: var(--clr-white);
 }
 
+/*used in home page "view all" and "read more"*/
 .view-all {
-    border-color: var(--clr-main);
     background: var(--clr-main);
-    color: var(--clr-white);
-    margin: var(--mg-nm) auto;
-    margin-bottom: 0;
+    border-color: var(--clr-main);
     box-shadow: var(--bs-button);
+    margin: var(--mg-nm) auto;
 }
 
 .view-all:hover {
-    box-shadow: var(--bs-button-hover);
     background: var(--clr-main);
+    box-shadow: var(--bs-button-hover);
     color: var(--clr-white);
     opacity: .9;
 }
 
-.read-more2 {
-    background: var(--clr-main);
-    color: var(--clr-white);
-    margin-top: var(--mg-sm);
-    display: inline-block;
-    box-shadow: var(--bs-button);
-    border: none;
-}
-
-.read-more2:hover {
-    box-shadow: var(--bs-button-hover);
-    opacity: .9;
-}
-
+/*used in dish page "add to cart"*/
 .add-cart{
     background: var(--clr-main);
-    padding: .5rem 4rem;
+    border: none; 
     box-shadow: var(--bs-button);
-    border: none;
-    
+    padding: .6rem 4rem;
 }
 
 .add-cart:hover{
+    background: var(--clr-main);
     box-shadow: var(--bs-button-hover);
+    color: var(--clr-white);
     opacity: .9;
 }
 
-.language{
-    background: var(--clr-white);
-    border-color: var(--clr-main);
-    color: var(--clr-main);
-    cursor: pointer;
-}
-
-.language:hover{
-    background: var(--clr-main);
-    color: var(--clr-white);
-}
-
+/*used in subscribe form*/
 .submit-btn {
     background: url(../../imgs/icons/submit.svg);
-    border: none;
-    padding: 0.75rem 1.25rem;
     background-position: center;
     background-repeat: no-repeat;
+    border: none;
+    padding: 0.75rem 1.25rem;
     cursor: pointer;
 }
