@@ -37,9 +37,5 @@
 }
 
 @media (max-width: 768px){
-   
-   .subscribe-form{
-    width: auto;
-   }
-    
+   .subscribe-form{width: auto;}
     }

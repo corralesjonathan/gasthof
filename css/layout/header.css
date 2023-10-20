@@ -17,8 +17,9 @@
     display: grid;
     align-items: center;
     width: 80vw;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     margin: var(--mg-nm) auto;
+    gap: 2rem;
 }
 
 .hero-texts-container {
@@ -92,11 +93,6 @@
     .hero-buttons-container,
     .hero-img-container {
         justify-content: center;
-    }
-
-    .hero-title-container {
-        grid-template-columns: 1fr;
-        gap: var(--mg-sm);
     }
 
     .hero-texts-container {text-align: center;}

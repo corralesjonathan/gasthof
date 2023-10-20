@@ -40,13 +40,3 @@
     size: .0625rem;
     color: var(--clr-white);
 }
-
-@media (max-width: 768px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-links{
-        grid-template-columns: 1fr;
-    }
-}

@@ -1,7 +1,8 @@
 /*used in hero titles*/
 .hero-title1{
     font-family: var(--ff-main);
-    font-size: clamp(var(--fs-lg), 4rem, var(--fs-xl));
+    /*font-size: clamp(var(--fs-lg), 4rem, var(--fs-xl));*/
+    font-size:  calc(var(--fs-md) + 2vw);;
     font-weight: var(--fw-rg);
     margin: 0;
 }
@@ -9,9 +10,11 @@
 /*used in hero titles*/
 .hero-title2{
     font-family: var(--ff-main);
-    font-size: clamp(var(--fs-xl), 7rem, var(--fs-xxl));
+    /*font-size: clamp(var(--fs-xl), 7rem, var(--fs-xxl));*/
+    font-size:  calc(var(--fs-xl) + 2.2vw);;
     font-weight: var(--fw-bk);
     margin: 0;
+    line-height: 1.2;
 }
 /*used in hero paragraph*/
 .hero-text{
