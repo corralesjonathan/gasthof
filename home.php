@@ -1,3 +1,27 @@
+<?php
+    require_once 'database.php';
+    // Reference: https://medoo.in/api/select
+
+    // con $items obtengo los datos de la tabla tb_dishes y de una columna
+    // hago un JOIN entre tb_dishes y tb_dishes_categories
+    $items = $database->select("tb_dishes", [
+        "[>]tb_dishes_categories" => ["id_dish_category" => "id_dish_category"]
+    ], [
+        "tb_dishes.id_dish", //pongo las columnas que necesito de la tabla tb_dishes con "*" no se puede seleccionar todas
+        "tb_dishes.dish_name",
+        "tb_dishes.dish_description",
+        "tb_dishes.dish_image",
+        "tb_dishes.dish_price",
+        "tb_dishes.featured",
+        "tb_dishes_categories.id_dish_category", //pongo las columnas que nesecito de la tabla tb_dishes_categories
+        "tb_dishes_categories.dish_category_name" 
+
+    ], [
+        "tb_dishes.featured" => 1 // hace que solo se muestren los platillos destacados, si featured es 1 signfica que es verdadero
+]);
+   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +60,7 @@
                 <div id="nav-container">
                     <button id="mobile-close-btn"><img src="./imgs/icons/close.svg" alt=""></button>
                     <ul class="nav-list">
-                        <li><a id="btnHome" class="nav-list-link" href="home.html">Home</a></li>
+                        <li><a id="btnHome" class="nav-list-link" href="home.php">Home</a></li>
                         <li><a id="btnMenu" class="nav-list-link" href="menu.html">Menu</a></li>
                         <li><a id="btnContact" class="nav-list-link" href="#">Contact</a></li>
                         <li><a id="btnAboutUs" class="nav-list-link" href="#">About Us</a></li>
@@ -94,7 +118,29 @@
                 <h2 class="home-title2">featured dishes</h2>
             </div>
             <div class="dishes-container">
-                <section class="dish-card">
+                
+            
+            <!--Con este codigo muestro todos los platillos añadidos a la tabla tb_dishes actualmente-->
+            <!--echo "<img src='./imgs/cards/".$item["dish_category_name"]."/".$item["dish_image"]."' alt='".$item["dish_name"]."' class='dish-card-img'>";-->
+            <!--LA SUBCARPETA SE LLAMA IGUAL A dish_category_name-->
+            <?php
+                foreach($items as $item){
+                echo "<section class='dish-card'>";
+                    echo "<img src='./imgs/cards/".$item["dish_category_name"]."/".$item["dish_image"]."' alt='".$item["dish_name"]."' class='dish-card-img'>";
+                    echo "<div class='dish-data-container'>";
+                        echo "<div>";
+                            echo "<h2 class='dish-title'>".$item["dish_name"]."</h2>";
+                            echo "<p class='dish-type'>".$item["dish_category_name"]."</p>";
+                        echo "</div>";
+                        echo "<a href='#'><img src='./imgs/icons/cart.svg' alt='Cart'></a>";
+                   echo "</div>";
+                    echo "<p class='dish-price'>$".$item["dish_price"]."</p>";
+                   echo "<a class='btn order' href='#'>Order</a>";
+                echo "</section>";
+                }
+            ?>
+                
+                <!--<section class="dish-card">
                     <img src="./imgs/cards/main-courses/schnitzel.webp" alt="Schnitzel" class="dish-card-img">
                     <div class="dish-data-container">
                         <div>
@@ -213,7 +259,7 @@
                     </div>
                     <p class="dish-price">$1.50</p>
                     <a class="btn order" href="dish.html">Order</a>
-                </section>
+                </section>-->
             </div>
             <a href="menu.html" class="btn view-all">view all</a>
         </div>
