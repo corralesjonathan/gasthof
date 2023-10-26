@@ -41,7 +41,7 @@
     font-size: clamp(var(--fs-lg), var(--fs-xl), var(--fs-xxl));
     font-weight: var(--fw-bk);
     margin: 0;
-    width: 15ch;
+    width: 20ch;
 }
 
 /*used for dishes titles*/
@@ -105,6 +105,7 @@
     text-decoration: none;
 }
 
+
 .filter-dishes-title{
     text-transform: uppercase;
     font-family: var(--ff-secondary);
@@ -118,6 +119,10 @@
 .single-dish-title{ font-size: var(--fs-md);}
 
 .single-dish-price{font-size: var(--fs-md);}
+
+.contact-texts{
+    color: var(--clr-gray);
+}
 
 .footer-legal{
     font-family: var(--ff-secondary);

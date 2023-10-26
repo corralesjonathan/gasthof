@@ -149,6 +149,27 @@
     margin-top: var(--mg-nm);
 }
 
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1rem;
+    width: 80vw;
+}
+
+.contact-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+.contact-socialmedia-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 
 @media (max-width: 768px){
     .restaurant-data{text-align: center;}
