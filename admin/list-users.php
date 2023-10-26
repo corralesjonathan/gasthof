@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="../css/themes/admin.css">
 </head>
 <body>
-    
+    <div class="main-container">
+<img src="../imgs/gasthof-logo.webp" alt="Gathof Logo"> 
     <h2 style='color: #333333'>Registered Users</h2>
     <table>
         <thead>
@@ -32,12 +33,13 @@
                 echo "<td style='padding-right: 40px'>".$users[$i]["lastname"]."</td>";
                 echo "<td style='padding-right: 40px'>".$users[$i]["usr"]."</td>";
                 echo "<td style='padding-right: 40px'>".$users[$i]["email"]."</td>";
-                echo "<td style='padding-right: 40px'><a style='color: blue; text-decoration:none' href='edit-users.php?id=".$users[$i]["id_user"]."'> 
-                Edit </a> <a style='color: red; text-decoration:none' href='delete-user.php?id=".$users[$i]["id_user"]."'>Delete</a></td>";
+                echo "<td style='padding-right: 40px'><a style='color: #333; text-decoration:none' href='edit-users.php?id=".$users[$i]["id_user"]."'> 
+                Edit </a> <a style='color: #9d1310; text-decoration:none' href='delete-user.php?id=".$users[$i]["id_user"]."'>Delete</a></td>";
                 echo "</tr>";
             };
             ?>
         </tbody>
     </table>
+    </div>
 </body>
 </html>
