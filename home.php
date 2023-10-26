@@ -50,33 +50,9 @@
     <!--header & hero-->
     <header class="hero-background">
         <!--nav-->
-        <div class="top-nav-container">
-            <nav class="top-nav">
-                <button id="mobile-open-btn"> <img src="./imgs/icons/mobile-btn.svg" alt="Mobile button"></button>
-                <div class="website-logo-container">
-                    <img src="./imgs/icons/website-logo.svg" alt="Gasthof logo" class="website-logo">
-                </div>
-                <!--nav menu & mobile btn-->
-                <div id="nav-container">
-                    <button id="mobile-close-btn"><img src="./imgs/icons/close.svg" alt=""></button>
-                    <ul class="nav-list">
-                        <li><a id="btnHome" class="nav-list-link" href="home.php">Home</a></li>
-                        <li><a id="btnMenu" class="nav-list-link" href="menu.html">Menu</a></li>
-                        <li><a id="btnContact" class="nav-list-link" href="#">Contact</a></li>
-                        <li><a id="btnAboutUs" class="nav-list-link" href="#">About Us</a></li>
-                    </ul>
-                </div>
-                <!--nav menu & mobile btn-->
-
-                <!--nav icons-->
-                <div class="icons_container">
-                    <a class="search-icon" href="#"><img src="./imgs/icons/search-icon.svg" alt="Search"></a>
-                    <a class="user-icon" href="#"><img src="./imgs/icons/user.svg" alt="Account"></a>
-                    <a class="bag-icon" href="#"><img src="./imgs/icons/bag.svg" alt="Bag"></a>
-                </div>
-                <!--nav icons-->
-            </nav>
-        </div>
+        <?php
+        include 'top-nav.php';
+        ?>
         <!--nav-->
         <!--hero slider, titles & buttons-->
         <div class="hero-container">
@@ -394,78 +370,17 @@
         <!--about restaurant section-->
 
         <!--subscribe form-->
-        <div class="subscribe-form-container">
-            <div class="form-titles-container">
-                <h3 class="home-title1">subscribe now</h3>
-                <h2 class="home-title2">join the family</h2>
-            </div>
-            <form class="subscribe-form">
-                <input class="email email-focus" type="text" placeholder="Email Address">
-                <input class="submit-btn" type="submit" value="">
-            </form>
-        </div>
+        <?php
+        include 'subscribe-form.php';
+        ?>
         <!--subscribe form-->
     </main>
     <!--main content-->
-
+    
     <!--footer-->
-    <footer class="footer-container">
-        <div class="footer-website-icon-container">
-            <img src="./imgs/icons/website-icon.svg" alt="">
-        </div>
-        <div class="footer-content">
-            <!--social links-->
-            <div>
-                <hr class="footer-hr">
-                <div class="social-icons-container">
-                    <a href="https://www.facebook.com/" target="_blank"> <img src="./imgs/icons/facebook.svg"
-                            alt="Facebook"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="./imgs/icons/instagram.svg"
-                            alt="Instagram"></a>
-                    <a href="https://www.tiktok.com/explore" target="_blank"><img src="./imgs/icons/tiktok.svg"
-                            alt="TikTok"></a>
-                </div>
-            </div>
-            <!--social links-->
-            <div class="footer-links">
-                <!--explore-->
-                <section>
-                    <hr class="footer-hr">
-                    <h2 class="dish-title footer-titles">explore</h2>
-                    <ul class="nav-footer-list">
-                        <li><a class="nav-footer-link" href="home.html">Home</a></li>
-                        <li><a class="nav-footer-link" href="menu.html">Menu</a></li>
-                        <li><a class="nav-footer-link" href="#">About Us</a></li>
-                    </ul>
-                </section>
-                <!--explore-->
-                <!--contact us-->
-                <section>
-                    <hr class="footer-hr">
-                    <h2 class="dish-title footer-titles">CONTACT US</h2>
-                    <ul class="nav-footer-list">
-                        <li><a class="nav-footer-link" href="tel:+490304664553700">+490304664553700</a></li>
-                        <li><a class="nav-footer-link" href="mailto:info@gasthof.com">info@gasthof.com</a></li>
-                        <li><a class="nav-footer-link" href="#">Berliner Strasse, Belin.</a></li>
-                    </ul>
-                </section>
-                <!--contact us-->
-                <!--legal-->
-                <section>
-                    <hr class="footer-hr">
-                    <h2 class="dish-title footer-titles">LEGAL</h2>
-                    <ul class="nav-footer-list">
-                        <li><a class="nav-footer-link" href="#">Terms</a></li>
-                        <li><a class="nav-footer-link" href="#">Privacy</a></li>
-                    </ul>
-                </section>
-                <!--legal-->
-            </div>
-        </div>
-        <!--footer legal-->
-        <p class="footer-legal">©<span id="current-year"></span> Gasthof. - All rights reserved.</p>
-        <!--footer legal-->
-    </footer>
+    <?php
+    include 'footer.php';
+    ?>
     <!--footer-->
 
     <!--script-->
