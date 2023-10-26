@@ -1,10 +1,21 @@
 body{
     font-family: Arial;
+    color: #333;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
 .container{
     display: grid;
-    width: 15rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
 }
 
 .form-items{
@@ -19,7 +30,6 @@ label{
 
 input, textarea{
     padding: .5rem;
-    border-radius: .5rem;
 }
 
 #preview{
@@ -29,7 +39,7 @@ input, textarea{
 
 .submit-btn{
     border: none;
-    background: hsl(1, 81%, 34%);
+    background: #9d1310;
     color: white;
     padding: 1rem 0;
     cursor: pointer;
@@ -46,8 +56,10 @@ input, textarea{
     right: 1rem;
 }
 
+
+
 input[type='file'] {
-    background: #12579f;
+    background: #9d1310;
     color: transparent;
     padding: 1rem 0;
 }
@@ -58,6 +70,10 @@ input[type='file']::before {
     margin: 0 .7rem;
   }
 
+select{
+    height: 3rem;
+}
+
 thead{
     font-weight: bold;
 }
@@ -65,3 +81,7 @@ thead{
 td{
     padding: .7rem;
 }
+
+@media (max-width: 768px){
+    .container{grid-template-columns: 1fr};
+    }
