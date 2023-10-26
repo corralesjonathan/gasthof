@@ -10,7 +10,7 @@ function selectedPage() {
     let url = window.location.href;
 
     //check url
-    if (url.includes("home.html")) {
+    if (url.includes("home.php")) {
         btnHome.classList.add("active");
     } else if (url.includes("menu.html")) {
         btnMenu.classList.add("active");
