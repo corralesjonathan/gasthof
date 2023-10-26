@@ -83,10 +83,10 @@
             <div class="hero-title-container">
                 <div class="hero-img-container">
                     <div class="hero-slide fade">
-                        <img class="hero-img" src="./imgs/hero-dish.png" alt="Hero dish">
+                        <img class="hero-img" src="./imgs/sliders/hero-dish.png" alt="Hero dish">
                     </div>
                     <div class="hero-slide fade">
-                        <img class="hero-img" src="./imgs/hero-dish01.png" alt="Hero dish">
+                        <img class="hero-img" src="./imgs/sliders/hero-dish01.png" alt="Hero dish">
                     </div>
                     <div class="hero-dots-container">
                         <span class="hero-dot" onclick="currentHeroSlide(1)"></span>
@@ -284,7 +284,7 @@
                     </div>
                 </div> <!--left-column-->
                 <div class="slide-img-container"><!--right column-->
-                    <img src="./imgs/köstritzer.webp" alt="" class="slide-img">
+                    <img src="./imgs/sliders/köstritzer.webp" alt="" class="slide-img">
                 </div>
             </section>
             <section class="slide fade">
@@ -300,7 +300,7 @@
                     </div>
                 </div> <!--left-column-->
                 <div class="slide-img-container"><!--right column-->
-                    <img src="./imgs/bitburger.webp" alt="" class="slide-img">
+                    <img src="./imgs/sliders/bitburger.webp" alt="" class="slide-img">
                 </div>
             </section>
             <section class="slide fade">
@@ -316,7 +316,7 @@
                     </div>
                 </div> <!--left-column-->
                 <div class="slide-img-container"><!--right column-->
-                    <img src="./imgs/schneider.webp" alt="" class="slide-img">
+                    <img src="./imgs/sliders/schneider.webp" alt="" class="slide-img">
                 </div>
             </section>
             <section class="slide fade">
@@ -331,7 +331,7 @@
                     </div>
                 </div> <!--left-column-->
                 <div class="slide-img-container"><!--right column-->
-                    <img src="./imgs/weihenstephaner.webp" alt="" class="slide-img">
+                    <img src="./imgs/sliders/weihenstephaner.webp" alt="" class="slide-img">
                 </div>
             </section>
             <!--slides-->
