@@ -101,18 +101,18 @@
             <!--LA SUBCARPETA SE LLAMA IGUAL A dish_category_name-->
             <?php
                 foreach($items as $item){
-                echo "<section class='dish-card'>";
-                    echo "<img src='./imgs/cards/".$item["dish_category_name"]."/".$item["dish_image"]."' alt='".$item["dish_name"]."' class='dish-card-img'>";
-                    echo "<div class='dish-data-container'>";
-                        echo "<div>";
-                            echo "<h2 class='dish-title'>".$item["dish_name"]."</h2>";
-                            echo "<p class='dish-type'>".$item["dish_category_name"]."</p>";
-                        echo "</div>";
-                        echo "<a href='#'><img src='./imgs/icons/cart.svg' alt='Cart'></a>";
-                   echo "</div>";
-                    echo "<p class='dish-price'>$".$item["dish_price"]."</p>";
-                   echo "<a class='btn order' href='#'>Order</a>";
-                echo "</section>";
+                 echo "<section class='dish-card'>"
+                    ."<img src='./imgs/cards/".$item["dish_category_name"]."/".$item["dish_image"]."' alt='".$item["dish_name"]."' class='dish-card-img'>"
+                    ."<div class='dish-data-container'>"
+                        ."<div>"
+                            ."<h2 class='dish-title'>".$item["dish_name"]."</h2>"
+                            ."<p class='dish-type'>".$item["dish_category_name"]."</p>"
+                        ."</div>"
+                        ."<a href='#'><img src='./imgs/icons/cart.svg' alt='Cart'></a>"
+                   ."</div>"
+                    ."<p class='dish-price'>$".$item["dish_price"]."</p>"
+                   ."<a class='btn order' href='#'>Order</a>"
+                ."</section>";
                 }
             ?>
                 

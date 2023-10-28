@@ -10,7 +10,7 @@
                     <ul class="nav-list">
                         <li><a id="btnHome" class="nav-list-link" href="home.php">Home</a></li>
                         <li><a id="btnMenu" class="nav-list-link" href="menu.php">Menu</a></li>
-                        <li><a id="btnContact" class="nav-list-link" href="#">Contact</a></li>
+                        <li><a id="btnContact" class="nav-list-link" href="contact.html">Contact</a></li>
                         <li><a id="btnAboutUs" class="nav-list-link" href="#">About Us</a></li>
                     </ul>
                 </div>
